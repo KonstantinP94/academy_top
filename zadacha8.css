@@ -1,0 +1,11 @@
+table {
+    background-color: aqua;
+    border: solid black 1px;
+}
+
+td {
+    background-color: blue;
+    color: azure;
+    text-align: center;
+    padding: auto;
+}
