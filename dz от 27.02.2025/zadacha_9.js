@@ -3,11 +3,14 @@
 
 
 
-window.addEventListener("load", main_func)
+window.addEventListener(
+    "load",
+    main_func
+)
 
 function main_func() {
-    const table = create_table() // Создаем таблицу и сохраняем ее
-    btnShowHide(table) // Передаем таблицу в функцию для установки обработчиков
+    const table = create_table()   
+    btnShowHide(table)
 }
 
 function btnShowHide(table) {
@@ -15,12 +18,12 @@ function btnShowHide(table) {
     let btnHide = document.querySelector("#hide")
 
     btnShow.addEventListener("click", function() {
-        table.style.display = 'table' // Показываем таблицу
-    });
+        table.style.display = 'table'
+    })
 
     btnHide.addEventListener("click", function() {
-        table.style.display = 'none' // Скрываем таблицу
-    });
+        table.style.display = 'none'
+    })
 }
 
 function create_table() {
@@ -34,7 +37,7 @@ function create_table() {
         for (let col = 0; col < 10; col++) {
             let td = document.createElement("td")
             tr.appendChild(td)
-            td.textContent = "gggg" // Заполняем ячейку текстом
+            td.textContent = "Текст" // Заполняем ячейку текстом
         }
     }
     return tbl // Возвращаем созданную таблицу
