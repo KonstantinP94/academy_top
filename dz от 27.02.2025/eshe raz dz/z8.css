@@ -1,0 +1,8 @@
+table {
+    border: solid black 1px;
+}
+
+tr, td {
+    color: aqua;
+    border: solid red 1px;
+}
